@@ -8,3 +8,6 @@ site 'http://community.opscode.com/api/v1'
 
 # You can also specify Cookbooks from Github repos. For example:
 #cookbook 'rvm',     github: 'fnichol/chef-rvm'
+
+# Include the basenode cookbook (required, do not remove!)
+cookbook 'amoeba_basenode', github: 'AmoebaConsulting/chef-amoeba-basenode'

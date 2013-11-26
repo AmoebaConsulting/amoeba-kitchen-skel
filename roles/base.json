@@ -1,0 +1,9 @@
+{
+  "name": "base",
+  "description": "Setup common deployment base",
+  "run_list": [
+    "recipe[basenode]"
+  ],
+  "chef_type": "role",
+  "json_class": "Chef::Role"
+}
