@@ -11,8 +11,20 @@ spec/reports
 test/tmp
 test/version_tmp
 tmp
+.DS_Store
 
 # YARD artifacts
 .yardoc
 _yardoc
 doc/
+
+# Project files
+.idea
+
+# For librarian
+/cookbooks
+/tmp
+*.swp
+
+# Vagrant
+.vagrant/

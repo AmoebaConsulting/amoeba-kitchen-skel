@@ -1,0 +1,26 @@
+{
+  "name": "localhost",
+
+  "tz": "America/Los_Angeles",
+
+  "run_list": [
+    "role[base]",
+    "role[psql_server]"
+  ],
+
+  "deployment": {
+    "provider": "default",
+    "host": "192.234.5.6"
+  },
+
+  "application": {
+    "name": "sample_app",
+    "database": {
+      "type":   "postgresql"
+    },
+    "url": "localhost",
+    "environment": "staging",
+    "repository": "git@github.com:me/myrepo.git",
+    "ruby_version": "2.0.0-p247"
+  }
+}

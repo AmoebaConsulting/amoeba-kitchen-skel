@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+# Add cookbooks to your Kitchen below. For example, to add a Cookbook from Opscode:
+#cookbook 'apt'
+
+# You can also specify Cookbooks from Github repos. For example:
+#cookbook 'rvm',     github: 'fnichol/chef-rvm'
