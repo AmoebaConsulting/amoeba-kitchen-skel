@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/AmoebaConsulting/amoeba-deploy-tools.git
+  revision: 2aa4cde1777a821b36b273865ebe80570d1ee204
+  specs:
+    amoeba-deploy-tools (0.0.1)
+      hashie (~> 2.0.5)
+      highline (~> 1.6.20)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -86,6 +94,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  amoeba-deploy-tools!
   chef (~> 11.8.0)
   knife-solo (= 0.4.0)
   librarian-chef (~> 0.0.2)
