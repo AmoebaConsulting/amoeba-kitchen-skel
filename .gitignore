@@ -28,3 +28,6 @@ doc/
 
 # Vagrant
 .vagrant/
+
+# Ignore our own config file
+.amoeba.yml
