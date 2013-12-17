@@ -3,5 +3,5 @@
   "user": "vagrant",
   "host": "127.0.0.1",
   "port": "2222",
-  "ident": "vagrant_rsa"
+  "ident": "~/.vagrant.d/insecure_private_key"
 }
