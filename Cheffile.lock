@@ -1,2 +1,76 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    build-essential (1.4.2)
+    chef_gem (0.1.0)
+    chef_handler (1.1.4)
+    dmg (2.0.8)
+    git (2.8.4)
+      build-essential (>= 0.0.0)
+      dmg (>= 0.0.0)
+      runit (>= 1.0.0)
+      windows (>= 0.0.0)
+      yum (< 3.0.0)
+    hostname (0.1.0)
+      hostsfile (>= 0.0.0)
+    hostsfile (2.4.2)
+    iptables (0.12.0)
+    ohai (1.1.12)
+    openssh (1.3.0)
+      iptables (>= 0.0.0)
+    runit (1.4.6)
+      build-essential (>= 0.0.0)
+      yum (< 3.0.0)
+    sudo (2.2.2)
+    swap (0.3.6)
+    timezone-ii (0.2.0)
+    windows (1.11.0)
+      chef_handler (>= 0.0.0)
+    yum (2.4.4)
+
+GIT
+  remote: https://github.com/AmoebaConsulting/chef-amoeba-basenode
+  ref: master
+  sha: 4e1072e2f491b22c00f54fd5109a77654e1be3f5
+  specs:
+    amoeba_basenode (0.0.1)
+      build-essential (>= 0.0.0)
+      git (>= 0.0.0)
+      hostname (>= 0.0.0)
+      locale (>= 0.0.0)
+      monit (>= 0.0.0)
+      ohai (>= 0.0.0)
+      openssh (>= 0.0.0)
+      rvm (>= 0.0.0)
+      sudo (>= 0.0.0)
+      swap (>= 0.0.0)
+      timezone-ii (>= 0.0.0)
+
+GIT
+  remote: https://github.com/AmoebaConsulting/chef-monit
+  ref: master
+  sha: 6a6afc85d9c68bf1f62234ffbca5b77294b60def
+  specs:
+    monit (0.7.1)
+
+GIT
+  remote: https://github.com/fnichol/chef-rvm
+  ref: master
+  sha: 0cd320911c1e568cbf2eeac895a5ef06e5821589
+  specs:
+    rvm (0.9.1)
+      chef_gem (>= 0.0.0)
+
+GIT
+  remote: https://github.com/fnordfish/chef-locale
+  ref: master
+  sha: 9dc57b75982fa26b4e515eb682929c5300f200ab
+  specs:
+    locale (0.1.0)
+
 DEPENDENCIES
+  amoeba_basenode (>= 0)
+  locale (>= 0)
+  monit (>= 0)
+  rvm (>= 0)
 

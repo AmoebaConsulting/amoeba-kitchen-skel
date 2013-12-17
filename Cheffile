@@ -11,3 +11,8 @@ site 'http://community.opscode.com/api/v1'
 
 # Include the basenode cookbook (required, do not remove!)
 cookbook 'amoeba_basenode', github: 'AmoebaConsulting/chef-amoeba-basenode'
+
+# Basenode cookbook Github dependencies (required, do not remove!):
+cookbook 'locale',  github: 'fnordfish/chef-locale'
+cookbook 'rvm',     github: 'fnichol/chef-rvm'
+cookbook 'monit',   github: 'AmoebaConsulting/chef-monit'
