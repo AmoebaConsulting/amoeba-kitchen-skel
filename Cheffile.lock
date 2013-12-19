@@ -5,12 +5,13 @@ SITE
     chef_gem (0.1.0)
     chef_handler (1.1.4)
     dmg (2.0.8)
-    git (2.8.4)
+    git (2.9.0)
       build-essential (>= 0.0.0)
       dmg (>= 0.0.0)
       runit (>= 1.0.0)
       windows (>= 0.0.0)
-      yum (< 3.0.0)
+      yum (~> 3.0)
+      yum-epel (>= 0.0.0)
     hostname (0.1.0)
       hostsfile (>= 0.0.0)
     hostsfile (2.4.2)
@@ -18,20 +19,23 @@ SITE
     ohai (1.1.12)
     openssh (1.3.0)
       iptables (>= 0.0.0)
-    runit (1.4.6)
+    runit (1.5.1)
       build-essential (>= 0.0.0)
-      yum (< 3.0.0)
+      yum (~> 3.0)
+      yum-epel (>= 0.0.0)
     sudo (2.2.2)
     swap (0.3.6)
     timezone-ii (0.2.0)
     windows (1.11.0)
       chef_handler (>= 0.0.0)
-    yum (2.4.4)
+    yum (3.0.2)
+    yum-epel (0.2.0)
+      yum (~> 3.0)
 
 GIT
   remote: https://github.com/AmoebaConsulting/chef-amoeba-basenode
   ref: master
-  sha: 4e1072e2f491b22c00f54fd5109a77654e1be3f5
+  sha: 7920fcef09ebeb7cb9409c6f0b80be85b2e5b05d
   specs:
     amoeba_basenode (0.0.1)
       build-essential (>= 0.0.0)
