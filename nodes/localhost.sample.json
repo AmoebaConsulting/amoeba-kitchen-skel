@@ -4,8 +4,9 @@
   "tz": "America/Los_Angeles",
 
   "run_list": [
-    "role[base]",
-    "role[psql_server]"
+    "recipe[amoeba_basenode]",
+    "recipe[webapp]",
+    "recipe[webapp::rails]"
   ],
 
   "deployment": {
@@ -18,9 +19,25 @@
     "database": {
       "type":   "postgresql"
     },
+
     "url": "localhost",
+    "redirect_urls": [],
+    "alias_urls": [],
+
     "environment": "staging",
     "repository": "git@github.com:me/myrepo.git",
-    "ruby_version": "2.0.0-p247"
+    "ruby_version": "2.0.0-p247",
+
+    "env_vars": {},
+    "crontab": [
+      {
+        "name": "test-job",
+        "command": "ls",
+        "minute": "0",
+        "hour": "0",
+        "day": "*",
+        "action": "delete"
+      }
+    ]
   }
 }
