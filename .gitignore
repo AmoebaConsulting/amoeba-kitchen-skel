@@ -31,6 +31,3 @@ doc/
 
 # Ignore our own config file
 .amoeba.yml
-
-# For security, ignore private keys (used to encrypt things like certs)
-private_keys/*
